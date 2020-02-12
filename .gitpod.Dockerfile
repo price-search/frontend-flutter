@@ -33,9 +33,11 @@ ENV ANDROID_HOME="/home/gitpod/development/android-sdk"
 ENV PATH="$PATH:$ANDROID_HOME/tools/bin"
 
 # Android SDK
-RUN . /home/gitpod/.sdkman/bin/sdkman-init.sh; \
-    set -ex; \
-    yes | sdk install java 8.0.242.hs-adpt; \
+RUN . /home/gitpod/.sdkman/bin/sdkman-init.sh \
+    && yes | sdk install java 8.0.242.hs-adpt \
+    && set -ex; \
+    mkdir ~/.android; \
+    touch ~/.android/repositories.cfg; \
     yes | sdkmanager "platform-tools" "platforms;android-29" "build-tools;29.0.3"; \
     yes | sdkmanager --licenses
 
