@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full
+FROM gitpod/workspace-full-vnc
 
 USER root
 
@@ -38,3 +38,9 @@ RUN . /home/gitpod/.sdkman/bin/sdkman-init.sh; \
     yes | sdk install java 8.0.242.hs-adpt; \
     yes | sdkmanager "platform-tools" "platforms;android-29" "build-tools;29.0.3"; \
     yes | sdkmanager --licenses
+
+RUN set -euxo pipefail; \
+    cd ~/development; \
+    wget -q https://dl.google.com/dl/android/studio/ide-zips/3.5.3.0/android-studio-ide-191.6010548-linux.tar.gz; \
+    tar -xzf android-studio-ide-191.6010548-linux.tar.gz; \
+    rm android-studio-ide-191.6010548-linux.tar.gz
