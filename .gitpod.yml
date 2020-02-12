@@ -5,6 +5,9 @@ ports:
   - port: 6080
     onOpen: open-browser
 
+tasks:
+  - init: /home/gitpod/development/android-studio/bin/studio.sh
+
 vscode:
   extensions:
     - Dart-Code.flutter@3.8.1:cytqQi/+kpu802ZOaJwayw==
