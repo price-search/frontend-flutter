@@ -1,6 +1,10 @@
 image:
   file: .gitpod.Dockerfile
 
+ports:
+  - port: 6080
+    onOpen: open-browser
+
 vscode:
   extensions:
     - Dart-Code.flutter@3.8.1:cytqQi/+kpu802ZOaJwayw==
