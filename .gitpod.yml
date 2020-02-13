@@ -1,6 +1,13 @@
 image:
   file: .gitpod.Dockerfile
 
+tasks:
+  - command: flutter run --web-port 8686
+
+ports:
+  - port: 8686
+    onOpen: open-preview
+
 vscode:
   extensions:
     - Dart-Code.flutter@3.8.1:cytqQi/+kpu802ZOaJwayw==
