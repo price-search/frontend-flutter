@@ -22,4 +22,5 @@ ENV PATH="$PATH:/home/gitpod/development/flutter/bin"
 RUN set -ex; \
     flutter channel beta; \
     flutter upgrade; \
-    flutter config --enable-web
+    flutter config --enable-web; \
+    flutter precache
