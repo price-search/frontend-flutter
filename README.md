@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/price-search/frontend)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
