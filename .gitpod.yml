@@ -1,5 +1,4 @@
-image:
-  file: .gitpod.Dockerfile
+image: gitpod/workspace-flutter
 
 tasks:
   - command: flutter run --web-port 8686
