@@ -32,14 +32,14 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal:40),
       child: Container(
-        constraints:BoxConstraints(maxWidth: 12000),
+        //constraints:BoxConstraints(maxWidth: 12000),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text('Price Search', style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white,
-              fontSize: 30,
+              fontSize: 40,
             ),
             ),
             Row(
@@ -47,24 +47,29 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                 Text('Home', style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
                 SizedBox(
-                  width: 30,
+                  width: 35,
                 ),
                 Text('Cotar', style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
                 SizedBox(
-                  width: 30,
+                  width: 35,
                 ),
                 Text('Sobre Nos', style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
                 SizedBox(
-                  width: 30,
+                  width: 35,
                 ),
                 MaterialButton(
-                  onPressed: null,
-                  color: Colors.blue,
-                  shape: RoundedRectangleBorder(BorderRedius.all(Redius.circular(20.0))),
-                  child: Text('Começar', style: TextStyle(color: Colors.white)),
-                ),
+                  color: Colors.red,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))
+                  ),
+                  onPressed: () => {},
+                  child: Text(
+                    'Comecar',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                )
               ],
             ),
           ]
@@ -77,8 +82,55 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
 class MobileNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal:40),
+      child: Container(
+        child: Column(
+          children: <Widget>[
+              Text('Price Search', style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                fontSize: 30,
+              ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text('Home', style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Text('Cotar', style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Text('Sobre Nos', style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    MaterialButton(
+                      color: Colors.red,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(20.0))
+                      ),
+                      onPressed: () => {},
+                      child: Text(
+                        'Comecar',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ]
+        ),
+        
+      ),
     );
   }
 }
