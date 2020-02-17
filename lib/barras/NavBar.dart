@@ -29,26 +29,46 @@ class DesktopNavBar extends StatefulWidget {
 class _DesktopNavBarState extends State<DesktopNavBar> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        children: <Widget>[
-          Text('Price Search', style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-            fontSize: 30,
-          ),
-          ),
-          Row(
-            children: <Widget>[
-              Text('Home', style: TextStyle(color: Colors.white),
-              ),
-              Text('Cotar', style: TextStyle(color: Colors.white),
-              ),
-              Text('Sobre Nos', style: TextStyle(color: Colors.white),
-              ),
-            ],
-          ),
-        ]
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal:40),
+      child: Container(
+        constraints:BoxConstraints(maxWidth: 12000),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Text('Price Search', style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 30,
+            ),
+            ),
+            Row(
+              children: <Widget>[
+                Text('Home', style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+                SizedBox(
+                  width: 30,
+                ),
+                Text('Cotar', style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+                SizedBox(
+                  width: 30,
+                ),
+                Text('Sobre Nos', style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+                SizedBox(
+                  width: 30,
+                ),
+                MaterialButton(
+                  onPressed: null,
+                  color: Colors.blue,
+                  shape: RoundedRectangleBorder(BorderRedius.all(Redius.circular(20.0))),
+                  child: Text('Começar', style: TextStyle(color: Colors.white)),
+                ),
+              ],
+            ),
+          ]
+        ),
       ),
     );
   }
