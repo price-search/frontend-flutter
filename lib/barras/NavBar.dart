@@ -44,17 +44,44 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
             ),
             Row(
               children: <Widget>[
-                Text('Home', style: TextStyle(color: Colors.white, fontSize: 18),
+                MaterialButton(
+                  color: Colors.red,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))
+                  ),
+                  onPressed: () => {},
+                  child: Text(
+                    'Home',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
                 SizedBox(
                   width: 35,
                 ),
-                Text('Cotar', style: TextStyle(color: Colors.white, fontSize: 18),
+                MaterialButton(
+                  color: Colors.redAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))
+                  ),
+                  onPressed: () => {},
+                  child: Text(
+                    'Cotar',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
                 SizedBox(
                   width: 35,
                 ),
-                Text('Sobre Nos', style: TextStyle(color: Colors.white, fontSize: 18),
+                MaterialButton(
+                  color: Colors.red,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))
+                  ),
+                  onPressed: () => {},
+                  child: Text(
+                    'Sobre Nós',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
                 SizedBox(
                   width: 35,
