@@ -18,6 +18,27 @@ class MidleBar extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Text('Tentamos te atender da melhor maneira', style: TextStyle(fontSize:25.0, color: Colors.white)),
             ),
+            Container(
+              width: 700,
+              child: Material(
+                elevation: 5.0,
+                borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                color: Colors.white,
+                child: TextField(
+                    decoration: InputDecoration(
+                      fillColor: Colors.white,
+                      filled: true,
+                    ),
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.red,
+                 ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
+            ),
             MaterialButton(
               color: Colors.white,
               shape: RoundedRectangleBorder(

@@ -92,17 +92,6 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                 SizedBox(
                   width: 35,
                 ),
-                MaterialButton(
-                  color: Colors.red,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(20.0))
-                  ),
-                  onPressed: () => {},
-                  child: Text(
-                    'Comecar',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                )
               ],
             ),
           ]
@@ -131,32 +120,53 @@ class MobileNavBar extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text('Home', style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Text('Cotar', style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Text('Sobre Nos', style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                    SizedBox(
-                      width: 30,
-                    ),
                     MaterialButton(
-                      color: Colors.red,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20.0))
-                      ),
-                      onPressed: () => {},
-                      child: Text(
-                        'Comecar',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    )
+                  color: Colors.red,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))
+                  ),
+                  onPressed: () => {
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext) => HomePage()))
+                  },
+                  child: Text(
+                    'Home',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+                SizedBox(
+                  width: 35,
+                ),
+                MaterialButton(
+                  color: Colors.redAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))
+                  ),
+                  onPressed: () => {
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext) => CoPage()))
+                  },
+                  child: Text(
+                    'Cotar',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+                SizedBox(
+                  width: 35,
+                ),
+                MaterialButton(
+                  color: Colors.red,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))
+                  ),
+                  onPressed: () => {},
+                  child: Text(
+                    'Sobre Nós',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+                SizedBox(
+                  width: 35,
+                ),
+                    
                   ],
                 ),
               ),
