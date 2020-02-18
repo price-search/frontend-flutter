@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:price_search/CoPage.dart';
+import 'package:price_search/HomePage.dart';
 
 class NavBar extends StatefulWidget {
   @override
@@ -49,7 +51,9 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20.0))
                   ),
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext) => HomePage()))
+                  },
                   child: Text(
                     'Home',
                     style: TextStyle(color: Colors.white),
@@ -63,7 +67,9 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20.0))
                   ),
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext) => CoPage()))
+                  },
                   child: Text(
                     'Cotar',
                     style: TextStyle(color: Colors.white),
