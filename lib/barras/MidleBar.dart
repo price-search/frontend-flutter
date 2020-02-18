@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 class MidleBar extends StatelessWidget {
 
    List<Widget> pageChildren(double width){
@@ -58,7 +58,7 @@ class MidleBar extends StatelessWidget {
        ),
       Padding(
         padding: const EdgeInsets.symmetric(vertical: 20.0),
-        child: Image.asset("lib/images/ps.png", width: width),
+        child: SvgPicture.asset("lib/images/price-search.svg", width: width),
       ) 
      ];
    }
