@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:price_search/CoPage.dart';
+import 'package:price_search/SNPage.dart';
 import 'package:price_search/HomePage.dart';
 
 class NavBar extends StatefulWidget {
@@ -35,71 +36,67 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Container(
         //constraints:BoxConstraints(maxWidth: 12000),
-        child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <
+                Widget>[
+          Text(
+            'Price Search',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 40,
+            ),
+          ),
+          Row(
             children: <Widget>[
-              Text(
-                'Price Search',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  fontSize: 40,
+              MaterialButton(
+                color: Colors.red,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                onPressed: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext) => HomePage()))
+                },
+                child: Text(
+                  'Home',
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
-              Row(
-                children: <Widget>[
-                  MaterialButton(
-                    color: Colors.red,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                    onPressed: () => {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext) => HomePage()))
-                    },
-                    child: Text(
-                      'Home',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 35,
-                  ),
-                  MaterialButton(
-                    color: Colors.redAccent,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                    onPressed: () => {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext) => CoPage()))
-                    },
-                    child: Text(
-                      'Cotar',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 35,
-                  ),
-                  MaterialButton(
-                    color: Colors.red,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                    onPressed: () => {},
-                    child: Text(
-                      'Sobre Nós',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 35,
-                  ),
-                ],
+              SizedBox(
+                width: 35,
               ),
-            ]),
+              MaterialButton(
+                color: Colors.redAccent,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                onPressed: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext) => CoPage()))
+                },
+                child: Text(
+                  'Cotar',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+              SizedBox(
+                width: 35,
+              ),
+              MaterialButton(
+                color: Colors.redAccent,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                onPressed: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext) => SNPage()))
+                },
+                child: Text(
+                  'Sobre Nos',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ],
+          ),
+        ]),
       ),
     );
   }
@@ -163,7 +160,10 @@ class MobileNavBar extends StatelessWidget {
                   color: Colors.red,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext) => SNPage()))
+                  },
                   child: Text(
                     'Sobre Nós',
                     style: TextStyle(color: Colors.white),
