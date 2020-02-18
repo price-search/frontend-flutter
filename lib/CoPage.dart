@@ -15,12 +15,15 @@ class _CoPageState extends State<CoPage> {
           gradient: LinearGradient(
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
-            colors: [Color.fromRGBO(139, 0, 0, 1.0),Color.fromRGBO(25, 25, 112, 1.0)],
+            colors: [
+              Color.fromRGBO(139, 0, 0, 1.0),
+              Color.fromRGBO(25, 25, 112, 1.0)
+            ],
           ),
         ),
         child: Column(
-              children: <Widget>[NavBar()],
-          ),
+          children: <Widget>[NavBar()],
+        ),
       ),
     );
   }

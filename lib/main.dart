@@ -5,7 +5,6 @@ import 'package:price_search/MenuPage.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
