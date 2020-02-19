@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:price_search/barras/navbar.dart';
-import 'package:price_search/barras/local_faci_midlebar.dart';
+import 'package:price_search/bars/navbar.dart';
+import 'package:price_search/bars/local_faci_midlebar.dart';
 
 class local_facilites_page extends StatelessWidget {
   @override

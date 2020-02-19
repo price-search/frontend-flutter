@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:price_search/barras/home_page_midlebar.dart';
-import 'package:price_search/barras/navbar.dart';
+import 'package:price_search/bars/home_page_midlebar.dart';
+import 'package:price_search/bars/navbar.dart';
 
 class home_page extends StatefulWidget {
   @override

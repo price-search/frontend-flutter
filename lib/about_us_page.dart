@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:price_search/barras/about_us_midlebar.dart';
-import 'package:price_search/barras/navbar.dart';
+import 'package:price_search/bars/about_us_midlebar.dart';
+import 'package:price_search/bars/navbar.dart';
 
 class about_us_page extends StatefulWidget {
   @override

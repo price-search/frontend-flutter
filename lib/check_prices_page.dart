@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:price_search/barras/navbar.dart';
-import 'package:price_search/barras/check_p_midlebar.dart';
+import 'package:price_search/bars/navbar.dart';
+import 'package:price_search/bars/check_p_midlebar.dart';
 
 class check_prices_page extends StatefulWidget {
   @override
