@@ -2,6 +2,8 @@
 
 The frontend of Price Search, built on Flutter for web.
 
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/price-search/frontend)
 
 ## Deploy
