@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:price_search/HomePage.dart';
-import 'package:price_search/MenuPage.dart';
 
 void main() => runApp(MyApp());
 
