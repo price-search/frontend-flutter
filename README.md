@@ -8,28 +8,14 @@ The frontend of Price Search, built on Flutter for web.
 
 ### GitHub Pages
 
-Run
-
-```sh
-./deploy.sh
-```
-
-or
-
-```sh
-./deploy.sh gh-pages
-```
+Run `./deploy.sh` or `./deploy.sh gh-pages`.
 
 > Will be available at [price-search.github.io/frontend](https://price-search.github.io/frontend)
 
-Credits: https://github.com/lukekarrys/git-directory-deploy and https://github.com/X1011/git-directory-deploy
+Credits: [lukekarrys/git-directory-deploy](https://github.com/lukekarrys/git-directory-deploy) and [X1011/git-directory-deploy](https://github.com/X1011/git-directory-deploy).
 
 ### Surge
 
-Run
-
-```sh
-./deploy.sh surge
-```
+Run `./deploy.sh surge`.
 
 > Will be available at [price-search.surge.sh](https://price-search.surge.sh)
