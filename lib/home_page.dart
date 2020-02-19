@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:price_search/barras/NavBar.dart';
-import 'package:price_search/barras/CoMB.dart';
+import 'package:price_search/barras/home_page_midlebar.dart';
+import 'package:price_search/barras/navbar.dart';
 
-class CoPage extends StatefulWidget {
+class home_page extends StatefulWidget {
   @override
-  _CoPageState createState() => _CoPageState();
+  _home_pageState createState() => _home_pageState();
 }
 
-class _CoPageState extends State<CoPage> {
+class _home_pageState extends State<home_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,11 +25,11 @@ class _CoPageState extends State<CoPage> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              NavBar(),
+              navbar(),
               Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 40.0),
-                child: CoMB(),
+                child: home_page_midlebar(),
               )
             ],
           ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CoMB extends StatelessWidget {
+class about_us_midlebar extends StatelessWidget {
   @override
   List<Widget> pageChildren(double width) {
     return <Widget>[
@@ -10,7 +10,7 @@ class CoMB extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text('Alguma coisa para fazer pesquisa dos produtos',
+              Text('Texto que fala sobre nos',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 50.0,

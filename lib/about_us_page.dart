@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:price_search/barras/NavBar.dart';
-import 'package:price_search/barras/MBEsta.dart';
+import 'package:price_search/barras/about_us_midlebar.dart';
+import 'package:price_search/barras/navbar.dart';
 
-class Esta extends StatelessWidget {
+class about_us_page extends StatefulWidget {
+  @override
+  _about_us_pageState createState() => _about_us_pageState();
+}
+
+class _about_us_pageState extends State<about_us_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,11 +25,11 @@ class Esta extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              NavBar(),
+              navbar(),
               Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 40.0),
-                child: MBEsta(),
+                child: about_us_midlebar(),
               )
             ],
           ),

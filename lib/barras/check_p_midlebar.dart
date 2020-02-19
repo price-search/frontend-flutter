@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class MBSN extends StatelessWidget {
+class check_p_midlebar extends StatelessWidget {
   @override
   List<Widget> pageChildren(double width) {
     return <Widget>[
@@ -10,7 +10,7 @@ class MBSN extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text('Texto que fala sobre nos',
+              Text('Alguma coisa para fazer pesquisa dos produtos',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 50.0,

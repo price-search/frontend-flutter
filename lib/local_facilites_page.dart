@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:price_search/barras/MBSN.dart';
-import 'package:price_search/barras/NavBar.dart';
+import 'package:price_search/barras/navbar.dart';
+import 'package:price_search/barras/local_faci_midlebar.dart';
 
-class SNPage extends StatefulWidget {
-  @override
-  _SNPageState createState() => _SNPageState();
-}
-
-class _SNPageState extends State<SNPage> {
+class local_facilites_page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,11 +20,11 @@ class _SNPageState extends State<SNPage> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              NavBar(),
+              navbar(),
               Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 40.0),
-                child: MBSN(),
+                child: local_faci_midlebar(),
               )
             ],
           ),

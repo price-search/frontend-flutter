@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class MidleBar extends StatelessWidget {
+class home_page_midlebar extends StatelessWidget {
   List<Widget> pageChildren(double width) {
     return <Widget>[
       Container(

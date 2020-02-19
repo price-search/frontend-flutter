@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class MBEsta extends StatelessWidget {
+class local_faci_midlebar extends StatelessWidget {
   @override
   List<Widget> pageChildren(double width) {
     return <Widget>[
