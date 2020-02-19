@@ -38,87 +38,83 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Container(
         //constraints:BoxConstraints(maxWidth: 12000),
-        child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <
+                Widget>[
+          Text(
+            'Price Search',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 40,
+            ),
+          ),
+          Row(
             children: <Widget>[
-              Text(
-                'Price Search',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  fontSize: 40,
+              MaterialButton(
+                color: Colors.red,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                onPressed: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext) => HomePage()))
+                },
+                child: Text(
+                  'Home',
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
-              Row(
-                children: <Widget>[
-                  MaterialButton(
-                    color: Colors.red,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                    onPressed: () => {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext) => HomePage()))
-                    },
-                    child: Text(
-                      'Home',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 35,
-                  ),
-                  MaterialButton(
-                    color: Colors.redAccent,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                    onPressed: () => {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext) => CoPage()))
-                    },
-                    child: Text(
-                      'Cotar',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 35,
-                  ),
-                  MaterialButton(
-                    color: Colors.redAccent,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                    onPressed: () => {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (BuildContext) => Esta()))
-                    },
-                    child: Text(
-                      'Estabelecimentos Locais',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 35,
-                  ),
-                  MaterialButton(
-                    color: Colors.redAccent,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                    onPressed: () => {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (BuildContext) => Esta()))
-                    },
-                    child: Text(
-                      'Sobre Nos',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ],
+              SizedBox(
+                width: 35,
               ),
-            ]),
+              MaterialButton(
+                color: Colors.redAccent,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                onPressed: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext) => CoPage()))
+                },
+                child: Text(
+                  'Cotar',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+              SizedBox(
+                width: 35,
+              ),
+              MaterialButton(
+                color: Colors.redAccent,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                onPressed: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext) => Esta()))
+                },
+                child: Text(
+                  'Estabelecimentos Locais',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+              SizedBox(
+                width: 35,
+              ),
+              MaterialButton(
+                color: Colors.redAccent,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                onPressed: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext) => SNPage()))
+                },
+                child: Text(
+                  'Sobre Nos',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ],
+          ),
+        ]),
       ),
     );
   }
