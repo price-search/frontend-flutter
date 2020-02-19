@@ -1,18 +1,35 @@
-# price_search
+# [Price Search](https://price-search.github.io/frontend)
 
-A new Flutter project.
+The frontend of Price Search, built on Flutter for web.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/price-search/frontend)
 
-## Getting Started
+## Deploy
 
-This project is a starting point for a Flutter application.
+### GitHub Pages
 
-A few resources to get you started if this is your first Flutter project:
+Run
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```sh
+./deploy.sh
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+or
+
+```sh
+./deploy.sh gh-pages
+```
+
+> Will be available at [price-search.github.io/frontend](https://price-search.github.io/frontend)
+
+Credits: https://github.com/lukekarrys/git-directory-deploy and https://github.com/X1011/git-directory-deploy
+
+### Surge
+
+Run
+
+```sh
+./deploy.sh surge
+```
+
+> Will be available at [price-search.surge.sh](https://price-search.surge.sh)
