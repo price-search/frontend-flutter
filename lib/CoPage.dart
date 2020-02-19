@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:price_search/barras/NavBar.dart';
+import 'package:price_search/barras/CoMB.dart';
 
 class CoPage extends StatefulWidget {
   @override
@@ -21,8 +22,17 @@ class _CoPageState extends State<CoPage> {
             ],
           ),
         ),
-        child: Column(
-          children: <Widget>[NavBar()],
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              NavBar(),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 40.0),
+                child: CoMB(),
+              )
+            ],
+          ),
         ),
       ),
     );
