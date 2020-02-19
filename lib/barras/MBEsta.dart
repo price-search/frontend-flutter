@@ -18,7 +18,7 @@ class MBEsta extends StatelessWidget {
                   )),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
-                child: Text('Pesquise os nossos estabelecimentos',
+                child: Text('Search our establishments',
                     style: TextStyle(fontSize: 25.0, color: Colors.white)),
               ),
               Container(
@@ -51,7 +51,7 @@ class MBEsta extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(
                       vertical: 20.0, horizontal: 40.0),
                   child: Text(
-                    'Pesquisar',
+                    'Search',
                     style: TextStyle(color: Colors.red),
                   ),
                 ),

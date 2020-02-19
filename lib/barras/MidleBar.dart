@@ -17,7 +17,7 @@ class MidleBar extends StatelessWidget {
                   )),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
-                child: Text('Tentamos te atender da melhor maneira',
+                child: Text('We try to serve you in the best way',
                     style: TextStyle(fontSize: 25.0, color: Colors.white)),
               ),
               Container(
@@ -50,7 +50,7 @@ class MidleBar extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(
                       vertical: 20.0, horizontal: 40.0),
                   child: Text(
-                    'Pesquisar',
+                    'Search',
                     style: TextStyle(color: Colors.red),
                   ),
                 ),

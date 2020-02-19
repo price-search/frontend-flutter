@@ -76,7 +76,7 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                       MaterialPageRoute(builder: (BuildContext) => CoPage()))
                 },
                 child: Text(
-                  'Cotar',
+                  'Check Prices',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -92,7 +92,7 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                       MaterialPageRoute(builder: (BuildContext) => Esta()))
                 },
                 child: Text(
-                  'Estabelecimentos Locais',
+                  'local facilities',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -108,7 +108,7 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                       MaterialPageRoute(builder: (BuildContext) => SNPage()))
                 },
                 child: Text(
-                  'Sobre Nos',
+                  'About Us',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -167,7 +167,7 @@ class MobileNavBar extends StatelessWidget {
                         MaterialPageRoute(builder: (BuildContext) => CoPage()))
                   },
                   child: Text(
-                    'Cotar',
+                    'Check Prices',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
@@ -183,7 +183,7 @@ class MobileNavBar extends StatelessWidget {
                         MaterialPageRoute(builder: (BuildContext) => Esta()))
                   },
                   child: Text(
-                    'Estabelecimentos Locais',
+                    'local facilities',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
@@ -199,7 +199,7 @@ class MobileNavBar extends StatelessWidget {
                         MaterialPageRoute(builder: (BuildContext) => SNPage()))
                   },
                   child: Text(
-                    'Sobre Nós',
+                    'About Us',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
