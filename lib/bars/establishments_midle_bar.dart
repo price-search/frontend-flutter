@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-class local_faci_midlebar extends StatelessWidget {
-  @override
+class EstablishmentsMidleBar extends StatelessWidget {
   List<Widget> pageChildren(double width) {
     return <Widget>[
       Container(
@@ -18,7 +16,7 @@ class local_faci_midlebar extends StatelessWidget {
                   )),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
-                child: Text('Search our establishments',
+                child: Text('Search our establishments.',
                     style: TextStyle(fontSize: 25.0, color: Colors.white)),
               ),
               Container(
@@ -69,15 +67,15 @@ class local_faci_midlebar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      builder: (context, Constraints) {
-        if (Constraints.maxWidth > 800) {
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 800) {
           return Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: pageChildren(Constraints.biggest.width / 2),
+            children: pageChildren(constraints.biggest.width / 2),
           );
         } else {
           return Column(
-            children: pageChildren(Constraints.biggest.width),
+            children: pageChildren(constraints.biggest.width),
           );
         }
       },

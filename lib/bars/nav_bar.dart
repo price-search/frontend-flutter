@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:price_search/check_prices_page.dart';
-import 'package:price_search/local_facilites_page.dart';
+import 'package:price_search/establishments_page.dart';
 import 'package:price_search/about_us_page.dart';
 import 'package:price_search/home_page.dart';
 
-class navbar extends StatefulWidget {
+class NavBar extends StatefulWidget {
   @override
-  _navbarState createState() => _navbarState();
+  _NavBarState createState() => _NavBarState();
 }
 
-class _navbarState extends State<navbar> {
+class _NavBarState extends State<NavBar> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      builder: (context, Constraints) {
-        if (Constraints.maxWidth > 800) {
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 800) {
           return DesktopNavBar();
         } else {
           return MobileNavBar();
@@ -58,7 +58,7 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext) => home_page()))
+                              builder: (bildContext) => HomePage()))
                     },
                     child: Text(
                       'Home',
@@ -76,10 +76,10 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext) => check_prices_page()))
+                              builder: (buildContext) => CheckPricesPage()))
                     },
                     child: Text(
-                      'Check Prices',
+                      'Check prices',
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
@@ -94,11 +94,10 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext) =>
-                                  local_facilites_page()))
+                              builder: (buildContext) => EstablishmentsPage()))
                     },
                     child: Text(
-                      'local facilities',
+                      'Establishments',
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
@@ -113,10 +112,10 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext) => about_us_page()))
+                              builder: (buildContext) => AboutUsPage()))
                     },
                     child: Text(
-                      'About Us',
+                      'About us',
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
@@ -156,7 +155,7 @@ class MobileNavBar extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (BuildContext) => home_page()))
+                            builder: (buildContext) => HomePage()))
                   },
                   child: Text(
                     'Home',
@@ -174,7 +173,7 @@ class MobileNavBar extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (BuildContext) => check_prices_page()))
+                            builder: (buildContext) => CheckPricesPage()))
                   },
                   child: Text(
                     'Check Prices',

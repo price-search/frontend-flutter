@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'pricesearch',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: home_page(),
+      home: HomePage(),
     );
   }
 }

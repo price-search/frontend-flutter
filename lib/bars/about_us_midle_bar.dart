@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-class about_us_midlebar extends StatelessWidget {
-  @override
+class AboutUsMidleBar extends StatelessWidget {
   List<Widget> pageChildren(double width) {
     return <Widget>[
       Container(
@@ -10,7 +8,7 @@ class about_us_midlebar extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text('Texto que fala sobre nos',
+              Text('This text is to explain what us are.',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 50.0,
@@ -29,15 +27,15 @@ class about_us_midlebar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      builder: (context, Constraints) {
-        if (Constraints.maxWidth > 800) {
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 800) {
           return Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: pageChildren(Constraints.biggest.width / 2),
+            children: pageChildren(constraints.biggest.width / 2),
           );
         } else {
           return Column(
-            children: pageChildren(Constraints.biggest.width),
+            children: pageChildren(constraints.biggest.width),
           );
         }
       },

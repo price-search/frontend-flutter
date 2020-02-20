@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:price_search/bars/navbar.dart';
-import 'package:price_search/bars/local_faci_midlebar.dart';
+import 'package:price_search/bars/nav_bar.dart';
+import 'package:price_search/bars/establishments_midle_bar.dart';
 
-class local_facilites_page extends StatelessWidget {
+class EstablishmentsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,11 +20,11 @@ class local_facilites_page extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              navbar(),
+              NavBar(),
               Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 40.0),
-                child: local_faci_midlebar(),
+                child: EstablishmentsMidleBar(),
               )
             ],
           ),

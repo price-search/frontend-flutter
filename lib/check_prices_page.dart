@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:price_search/bars/navbar.dart';
-import 'package:price_search/bars/check_p_midlebar.dart';
+import 'package:price_search/bars/nav_bar.dart';
+import 'package:price_search/bars/check_prices_midle_bar.dart';
 
-class check_prices_page extends StatefulWidget {
+class CheckPricesPage extends StatefulWidget {
   @override
-  _check_prices_pageState createState() => _check_prices_pageState();
+  _CheckPricesPageState createState() => _CheckPricesPageState();
 }
 
-class _check_prices_pageState extends State<check_prices_page> {
+class _CheckPricesPageState extends State<CheckPricesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,11 +25,11 @@ class _check_prices_pageState extends State<check_prices_page> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              navbar(),
+              NavBar(),
               Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 40.0),
-                child: check_p_midlebar(),
+                child: CheckPricesMidleBar(),
               )
             ],
           ),
