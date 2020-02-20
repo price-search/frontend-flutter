@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 
 class EstablishmentsMidleBar extends StatelessWidget {
+  Widget getListView() {
+    var listView = ListView(
+      children: <Widget>[
+        ListTile(
+          leading: Icon(Icons.landscape),
+          title: Text("Ola eu sou o Lucas"),
+          subtitle: Text("Bom dia para voce"),
+        )
+      ],
+    );
+  }
+
   List<Widget> pageChildren(double width) {
     return <Widget>[
       Container(
@@ -53,7 +65,19 @@ class EstablishmentsMidleBar extends StatelessWidget {
                     style: TextStyle(color: Colors.red),
                   ),
                 ),
-              )
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 30.0),
+              ),
+              Container(
+                width: 700,
+                child: Material(
+                  elevation: 5.0,
+                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  color: Colors.white,
+                  child: getListView(),
+                ),
+              ),
             ]),
       ),
       Padding(
