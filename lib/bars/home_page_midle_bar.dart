@@ -8,7 +8,7 @@ class HomePageMidleBar extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text('Igor Viado',
+              Text('Igor Lerdo',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 50.0,
