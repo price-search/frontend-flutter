@@ -8,23 +8,23 @@ class HomePageMidleBar extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text('Price Seach',
+              Text('Price Search',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 50.0,
-                    color: Colors.white,
+                    color: Colors.blueGrey,
                   )),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
-                child: Text('We try to serve you in the best way.',
-                    style: TextStyle(fontSize: 25.0, color: Colors.white)),
+                child: Text('Type here what do you want to search:',
+                    style: TextStyle(fontSize: 25.0, color: Colors.blueGrey)),
               ),
               Container(
                 width: 700,
                 child: Material(
                   elevation: 5.0,
                   borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                  color: Colors.white,
+                  color: Colors.blueGrey,
                   child: TextField(
                     decoration: InputDecoration(
                       fillColor: Colors.white,
@@ -50,7 +50,7 @@ class HomePageMidleBar extends StatelessWidget {
                       vertical: 20.0, horizontal: 40.0),
                   child: Text(
                     'Search',
-                    style: TextStyle(color: Colors.red),
+                    style: TextStyle(color: Colors.black),
                   ),
                 ),
               )

@@ -17,8 +17,8 @@ class _HomePageState extends State<HomePage> {
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
             colors: [
-              Color.fromRGBO(139, 0, 0, 1.0),
-              Color.fromRGBO(25, 25, 112, 1.0)
+              Color.fromRGBO(204, 229, 255, 1.0),
+              Color.fromRGBO(230, 242, 255, 1.0)
             ],
           ),
         ),

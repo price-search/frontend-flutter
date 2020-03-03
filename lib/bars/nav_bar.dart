@@ -55,7 +55,7 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
               Row(
                 children: <Widget>[
                   MaterialButton(
-                    color: Colors.red,
+                    color: Colors.blueGrey,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(20.0))),
                     onPressed: () => {
@@ -73,7 +73,7 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                     width: 35,
                   ),
                   MaterialButton(
-                    color: Colors.redAccent,
+                    color: Colors.blueGrey,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(20.0))),
                     onPressed: () => {
