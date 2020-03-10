@@ -2,10 +2,17 @@ image: gitpod/workspace-flutter
 
 tasks:
   - command: flutter run --web-port 8686
+  - command: chromium-browser --no-sandbox
 
 ports:
   - port: 8686
     onOpen: open-preview
+  - port: 6080
+    onOpen: open-preview
+  - port: 5900
+    onOpen: ignore
+  - port: 35900
+    onOpen: ignore
 
 vscode:
   extensions:
